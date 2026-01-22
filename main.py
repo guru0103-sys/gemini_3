@@ -19,7 +19,7 @@ class ForensicRequest(BaseModel):
 @app.get("/")
 def read_root():
     """This route fixes the 'Cannot GET /' error"""
-    return {"status": "Nyaya-Setu Backend is Live", "version": "Gemini-3-Pro"}
+    return {"status": "Forensiq Backend is Live", "version": "Gemini-3-Pro"}
 
 @app.post("/analyze")
 async def analyze_evidence_route(request: ForensicRequest):
