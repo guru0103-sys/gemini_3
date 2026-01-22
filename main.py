@@ -1,6 +1,7 @@
-# main.py
+# main.
 import os
 from google import genai
+export GEMINI_API_KEY='AIzaSyCr2LNdmvhNYx41IPnIFbVqxxnOXg-8K_U'
 
 # The SDK automatically picks up GEMINI_API_KEY from your Codespace secrets
 client = genai.Client() 
