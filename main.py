@@ -52,3 +52,10 @@ if __name__ == "__main__":
         contents="Manual terminal test: Are you active?"
     )
     print("AI Response:", test_response.text)
+    # ... (Keep all your existing code above)
+
+if __name__ == "__main__":
+    import uvicorn
+    print("✨ Starting Forensiq Server...")
+    # This manually starts the server on port 8000
+    uvicorn.run(app, host="0.0.0.0", port=8000)
