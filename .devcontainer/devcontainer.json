@@ -1,0 +1,19 @@
+{
+    "name": "Nyaya-Setu Backend",
+    "image": "mcr.microsoft.com/devcontainers/python:3.11",
+    "features": {
+        "ghcr.io/devcontainers/features/github-cli:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    },
+    "postCreateCommand": "pip install google-genai fastapi uvicorn",
+    "remoteEnv": {
+        "GEMINI_API_KEY": "${localEnv:GEMINI_API_KEY}"
+    }
+}
