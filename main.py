@@ -14,3 +14,9 @@ def analyze_evidence(text_input):
         }
     )
     return response.text
+    if __name__ == "__main__":
+    print("🚀 Starting forensic analysis...")
+    result = analyze_evidence("Verify this sample evidence.")
+    print("Result:", result)
+    
+
